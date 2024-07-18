@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Receipt</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Receipt</h2>
+        <p>Dear {{ username }},</p>
+        <p>Your payment of {{ amount_inr }} {{ data.currency }} has been processed successfully.</p>
+        <p>Receipt ID: {{ data.receipt }}</p>
+        <p>Thank you for your payment.</p>
+        <br>
+        <p>Regards,</p>
+        <p>NurseryLive Team</p>
+    </div>
+</body>
+</html>
